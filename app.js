@@ -99,6 +99,7 @@ async function start(client) {
         res.status(200).json({ message: "Logout Success" });
     });
     app.post("/deposit", async (req, res) => {
+        console.log("Deposit");
         const {
             nama,
             kode_deposit,
@@ -113,6 +114,7 @@ async function start(client) {
         //     `💰 *DEPOSIT NOTIFICATION*\n• _Username_: *${username}*\n• _Jumlah_: *${jumlah}*\n• _Payment_: *${payment}*\n• _Status_: *${status}*\n• _Date_: *${date}*\n• _Time_: *${time}*`
         // );
         if (status == "created") {
+            console.log("Deposit Created");
             await client.sendText(
                 "6283893703656@c.us",
                 `Hai *${nama}*,\nSilahkan lakukan pembayaran untuk Invoice *#${kode_deposit}* sebesar: \n💵*Rp ${formatRupiah(
@@ -121,6 +123,7 @@ async function start(client) {
             );
             res.status(200).json({ message: "Deposit Created" });
         } else if (status == "success") {
+            console.log("Deposit Success");
             await client.sendText(
                 "6283893703656@c.us",
                 `Hai *${nama}*,\nPembayaran invoice *#${kode_deposit}* berhasil.\nJumlah pembayaran yang di transfer: \n*${formatRupiah(
@@ -138,6 +141,7 @@ async function start(client) {
         }
     });
     app.post("/order", async (req, res) => {
+        console.log("Order Created");
         const { nama, order_id, layanan, target, jumlah, total } = req.body;
         await client.sendText(
             "6283893703656@c.us",
