@@ -132,12 +132,12 @@ async function start(client) {
                     jumlah_transfer
                 )}*\nSilahkan Transfer ke: \n*💳${provider} ${tujuan}*\n\n_Permintaan isi saldo Anda akan otomatis dibatalkan atau dierrorkan oleh sistem jika dalam waktu 6 jam sistem kami belum mendeteksi adanya Pembayaran atau Transfer masuk dari Anda._`
             );
-            await client.sendText(
-                "6283893703656@c.us",
-                `Hai *${nama}*,\nSilahkan lakukan pembayaran untuk Invoice *#${kode_deposit}* sebesar: \n*💵Rp ${formatRupiah(
-                    jumlah_transfer
-                )}*\nSilahkan Transfer ke: \n*💳${provider} ${tujuan}*\n\n_Permintaan isi saldo Anda akan otomatis dibatalkan atau dierrorkan oleh sistem jika dalam waktu 6 jam sistem kami belum mendeteksi adanya Pembayaran atau Transfer masuk dari Anda._`
-            );
+            // await client.sendText(
+            //     "6283893703656@c.us",
+            //     `Hai *${nama}*,\nSilahkan lakukan pembayaran untuk Invoice *#${kode_deposit}* sebesar: \n*💵Rp ${formatRupiah(
+            //         jumlah_transfer
+            //     )}*\nSilahkan Transfer ke: \n*💳${provider} ${tujuan}*\n\n_Permintaan isi saldo Anda akan otomatis dibatalkan atau dierrorkan oleh sistem jika dalam waktu 6 jam sistem kami belum mendeteksi adanya Pembayaran atau Transfer masuk dari Anda._`
+            // );
             res.status(200).json({ message: "Deposit Created" });
         } else if (status == "success") {
             console.log("Deposit Success");
@@ -154,19 +154,19 @@ async function start(client) {
                     "Rp "
                 )}*\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
             );
-            await client.sendText(
-                "6283893703656@c.us",
-                `Hai *${nama}*,\nPembayaran invoice *#${kode_deposit}* berhasil.\nJumlah pembayaran yang di transfer: \n*${formatRupiah(
-                    jumlah_transfer,
-                    "Rp "
-                )}*\nSaldo yang di terima: \n*${formatRupiah(
-                    get_saldo,
-                    "Rp "
-                )}*\nTotal saldo anda: *${formatRupiah(
-                    saldo,
-                    "Rp "
-                )}*\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
-            );
+            // await client.sendText(
+            //     "6283893703656@c.us",
+            //     `Hai *${nama}*,\nPembayaran invoice *#${kode_deposit}* berhasil.\nJumlah pembayaran yang di transfer: \n*${formatRupiah(
+            //         jumlah_transfer,
+            //         "Rp "
+            //     )}*\nSaldo yang di terima: \n*${formatRupiah(
+            //         get_saldo,
+            //         "Rp "
+            //     )}*\nTotal saldo anda: *${formatRupiah(
+            //         saldo,
+            //         "Rp "
+            //     )}*\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
+            // );
             res.status(200).json({ message: "Deposit Success" });
         }
     });
@@ -180,13 +180,13 @@ async function start(client) {
                 "Rp "
             )}\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
         );
-        await client.sendText(
-            "6283893703656@c.us",
-            `Hai *${nama}*,\nkamu berhasil membuat pesanan dan akan segera diproses.\nberikut data pesanan kamu :\n- *ID* :  ${order_id}\n- *Layanan* :  ${layanan}\n- *Target* :  ${target}\n- *Jumlah Pesan* :  ${jumlah}\n- *Total Harga* :  ${formatRupiah(
-                total,
-                "Rp "
-            )}\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
-        );
+        // await client.sendText(
+        //     "6283893703656@c.us",
+        //     `Hai *${nama}*,\nkamu berhasil membuat pesanan dan akan segera diproses.\nberikut data pesanan kamu :\n- *ID* :  ${order_id}\n- *Layanan* :  ${layanan}\n- *Target* :  ${target}\n- *Jumlah Pesan* :  ${jumlah}\n- *Total Harga* :  ${formatRupiah(
+        //         total,
+        //         "Rp "
+        //     )}\n\n*| Bos Panel Sosmed |*\n${date} _${time}_ WIB`
+        // );
         res.status(200).json({ message: "Order Success" });
     });
     client.onMessage(async (message) => {
