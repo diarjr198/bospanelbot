@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 
 const wa = require("@open-wa/wa-automate");
 
-const browser = await puppeteer.launch({
+puppeteer.launch({
     args: ["--no-sandbox"],
 });
 
