@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 var multer = require("multer");
 var upload = multer();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const wa = require("@open-wa/wa-automate");
 
@@ -83,6 +83,9 @@ async function start(client) {
     app.use(client.middleware(true));
     app.listen(port, () => {
         console.log(`Server is running on port ${port}`);
+    });
+    app.get("/", (req, res) => {
+        res.send("Welcome to My Bot!");
     });
     app.post("/login", async (req, res) => {
         const { username } = req.body;
