@@ -114,6 +114,7 @@ async function start(client) {
             nama,
             kode_deposit,
             jumlah_transfer,
+            provider,
             tujuan,
             get_saldo,
             saldo,
@@ -129,7 +130,7 @@ async function start(client) {
                 "6283893703656@c.us",
                 `Hai *${nama}*,\nSilahkan lakukan pembayaran untuk Invoice *#${kode_deposit}* sebesar: \n*💵Rp ${formatRupiah(
                     jumlah_transfer
-                )}*\nSilahkan Transfer ke: \n*💳BCA ${tujuan}*\n\n_Permintaan isi saldo Anda akan otomatis dibatalkan atau dierrorkan oleh sistem jika dalam waktu 6 jam sistem kami belum mendeteksi adanya Pembayaran atau Transfer masuk dari Anda._`
+                )}*\nSilahkan Transfer ke: \n*💳${provider} ${tujuan}*\n\n_Permintaan isi saldo Anda akan otomatis dibatalkan atau dierrorkan oleh sistem jika dalam waktu 6 jam sistem kami belum mendeteksi adanya Pembayaran atau Transfer masuk dari Anda._`
             );
             res.status(200).json({ message: "Deposit Created" });
         } else if (status == "success") {
