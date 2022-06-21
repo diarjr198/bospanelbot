@@ -7,6 +7,10 @@ const port = process.env.PORT || 5000;
 
 const wa = require("@open-wa/wa-automate");
 
+const browser = await puppeteer.launch({
+    args: ["--no-sandbox"],
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
