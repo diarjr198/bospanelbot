@@ -8,9 +8,9 @@ const puppeteer = require("puppeteer");
 
 const wa = require("@open-wa/wa-automate");
 
-puppeteer.launch({
-    args: ["--no-sandbox"],
-});
+// puppeteer.launch({
+//     args: ["--no-sandbox"],
+// });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

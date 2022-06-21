@@ -1,0 +1,36 @@
+2022/06/21-12:29:39.202 5f174 Reusing MANIFEST /home/diarjr/Documents/Project/nodejs/bospanelbot/_IGNORE_COVID_HELPER/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/21-12:29:39.202 5f174 Recovering log #865
+2022/06/21-12:29:39.212 5f174 Reusing old log /home/diarjr/Documents/Project/nodejs/bospanelbot/_IGNORE_COVID_HELPER/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000865.log 
+2022/06/21-12:29:39.213 5f174 Delete type=2 #864
+2022/06/21-12:29:39.317 5f16d Level-0 table #870: started
+2022/06/21-12:29:39.335 5f16d Level-0 table #870: 65638 bytes OK
+2022/06/21-12:29:39.361 5f16d Delete type=0 #865
+2022/06/21-12:29:39.362 5f16d Manual compaction at level-0 from '\x000\x00\x00\x00' @ 72057594037927935 : 1 .. '\x001\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/06/21-12:30:08.263 5f174 Level-0 table #872: started
+2022/06/21-12:30:08.322 5f174 Level-0 table #872: 1202894 bytes OK
+2022/06/21-12:30:08.326 5f174 Delete type=0 #869
+2022/06/21-12:30:16.464 5f174 Level-0 table #874: started
+2022/06/21-12:30:16.499 5f174 Level-0 table #874: 1087255 bytes OK
+2022/06/21-12:30:16.502 5f174 Delete type=0 #871
+2022/06/21-12:30:16.505 5f174 Compacting 2@0 + 1@1 files
+2022/06/21-12:30:16.649 5f174 Generated table #875@0: 52917 keys, 1415395 bytes
+2022/06/21-12:30:16.649 5f174 Compacted 2@0 + 1@1 files => 1415395 bytes
+2022/06/21-12:30:16.651 5f174 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/06/21-12:30:16.652 5f174 Delete type=2 #872
+2022/06/21-12:30:16.652 5f174 Delete type=2 #874
+2022/06/21-12:30:16.652 5f174 Delete type=2 #870
+2022/06/21-12:30:20.888 5f172 Compacting 1@1 + 1@2 files
+2022/06/21-12:30:20.963 5f172 Generated table #876@1: 23549 keys, 1142810 bytes
+2022/06/21-12:30:20.963 5f172 Compacted 1@1 + 1@2 files => 1142810 bytes
+2022/06/21-12:30:20.966 5f172 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/21-12:30:20.966 5f172 Delete type=2 #867
+2022/06/21-12:30:20.966 5f172 Delete type=2 #875
+2022/06/21-12:30:22.389 5f171 Level-0 table #878: started
+2022/06/21-12:30:22.454 5f171 Level-0 table #878: 1155211 bytes OK
+2022/06/21-12:30:22.457 5f171 Delete type=0 #873
+2022/06/21-12:30:23.003 5f172 Compacting 1@1 + 1@2 files
+2022/06/21-12:30:23.090 5f172 Generated table #879@1: 30418 keys, 1628986 bytes
+2022/06/21-12:30:23.090 5f172 Compacted 1@1 + 1@2 files => 1628986 bytes
+2022/06/21-12:30:23.092 5f172 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/21-12:30:23.092 5f172 Delete type=2 #876
+2022/06/21-12:30:23.092 5f172 Delete type=2 #878
