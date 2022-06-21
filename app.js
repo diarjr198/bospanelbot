@@ -8,6 +8,7 @@ const wa = require("@open-wa/wa-automate");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 // for parsing multipart/form-data
 app.use(upload.array());
