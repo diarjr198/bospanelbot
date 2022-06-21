@@ -4,6 +4,7 @@ const cors = require("cors");
 var multer = require("multer");
 var upload = multer();
 const port = process.env.PORT || 5000;
+const puppeteer = require("puppeteer");
 
 const wa = require("@open-wa/wa-automate");
 
